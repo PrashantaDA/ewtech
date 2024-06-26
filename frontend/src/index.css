@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap"); */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	overflow-x: hidden;
+	width: 100%;
+	font-family: "Briem Hand", cursive;
+	background-color: #07080b;
+	color: #f8f7f4;
+}
+
+input,
+textarea {
+	color: #222;
+}

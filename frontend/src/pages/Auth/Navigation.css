@@ -1,0 +1,66 @@
+#navigation-container {
+	width: 4%;
+	transition: width 0.12s ease-in-out;
+	overflow: hidden; /* Hide overflowing content during transition */
+}
+#navigation-container:hover {
+	width: 12%;
+}
+
+#navigation-container:hover .nav-icons {
+	margin-right: 8px;
+}
+
+@media screen and (min-width: 2200px) {
+	#navigation-container {
+		width: 2.5%;
+	}
+	#navigation-container:hover {
+		width: 10%;
+	}
+}
+
+/* Initially hide nav-item-name */
+.nav-item-name {
+	display: none;
+	transition: opacity 0.1s ease-in-out; /* Add opacity transition */
+}
+
+#navigation-container:hover .nav-item-name {
+	display: block;
+	opacity: 1;
+}
+
+.profile-icon {
+	display: block;
+	opacity: 1;
+	color: #f8f7f4;
+}
+
+#navigation-container:hover .profile-icon {
+	display: none;
+	opacity: 0;
+	transition: opacity 0.1s ease-in-out; /* Add opacity transition */
+}
+
+.search-input {
+	display: none;
+	opacity: 0;
+	transition: opacity 0.2s ease-in-out; /* Add opacity transition */
+}
+
+#navigation-container:hover .search-input {
+	display: block;
+	opacity: 1;
+}
+
+#navigation-container:hover .search-icon {
+	display: none;
+	transition: opacity 0.2s ease-in-out; /* Add opacity transition */
+}
+
+@media (max-width: 640px) {
+	.sideimg {
+		display: none !important;
+	}
+}
